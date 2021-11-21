@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <title>test</title>
+    <link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+	integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv"
+	crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,700;1,700;1,900&display=swap" rel="stylesheet">
+	<!-- Jquery사용 URL -->	
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    test
+    <div class="weekContainer">
+        <div id="calendar">
+            <div class="dayHeaderContainer">
+                    <c:forEach var="item" items="${days}" varStatus="idx">
+                        <div class="dayHeader">
+                            <span>item&nbsp&nbsp</span>
+                            <span class="dayoftheweek${idx.index}">NoneData</span>
+                        </div>
+                    </c:forEach>
+                </div>
+
+            <div id="calendar_value">
+                <div>
+                    <div id="00900" class="timeLineItemValueFirst">9시 ~ 9시 30분</div>
+                    <div id="00930" class="timeLineItemValue">9시 30분 ~ 10시</div>
+                    <div id="01000" class="timeLineItemValue">10시 ~ 10시 30분</div>
+                    <div id="01030" class="timeLineItemValue">10시 30분 ~ 11시</div>
+                    <div id="01100" class="timeLineItemValue">11시 ~ 11시 30분</div>
+                    <div id="01130" class="timeLineItemValue">11시 30분 ~ 12시</div>
+                    <div id="01200" class="timeLineItemValue">12시 ~ 12시 30분</div>
+                    <div id="01230" class="timeLineItemValue">12시 30분 ~ 13시</div>
+                    <div id="01300" class="timeLineItemValue">13시 ~ 13시 30분</div>
+                    <div id="01330" class="timeLineItemValue">13시 30분 ~ 14시</div>
+                    <div id="01400" class="timeLineItemValue">14시 ~ 14시 30분</div>
+                    <div id="01430" class="timeLineItemValue">14시 30분 ~ 15시</div>
+                    <div id="01500" class="timeLineItemValue">15시 ~ 15시 30분</div>
+                    <div id="01530" class="timeLineItemValue">15시 30분 ~ 16시</div>
+                    <div id="01600" class="timeLineItemValue">16시 ~ 16시 30분</div>
+                    <div id="01630" class="timeLineItemValue">16시 30분 ~ 17시</div>
+                    <div id="01700" class="timeLineItemValue">17시 ~ 17시 30분</div>
+                    <div id="01730" class="timeLineItemValue">17시 30분 ~ 18시</div>
+                </div>
+                <div>
+                    <div id="10900" class="timeLineItemValueFirst">9시 ~ 9시 30분</div>
+                    <div id="10930" class="timeLineItemValue">9시 30분 ~ 10시</div>
+                    <div id="11000" class="timeLineItemValue">10시 ~ 10시 30분</div>
+                    <div id="11030" class="timeLineItemValue">10시 30분 ~ 11시</div>
+                    <div id="11100" class="timeLineItemValue">11시 ~ 11시 30분</div>
+                    <div id="11130" class="timeLineItemValue">11시 30분 ~ 12시</div>
+                    <div id="11200" class="timeLineItemValue">12시 ~ 12시 30분</div>
+                    <div id="11230" class="timeLineItemValue">12시 30분 ~ 13시</div>
+                    <div id="11300" class="timeLineItemValue">13시 ~ 13시 30분</div>
+                    <div id="11330" class="timeLineItemValue">13시 30분 ~ 14시</div>
+                    <div id="11400" class="timeLineItemValue">14시 ~ 14시 30분</div>
+                    <div id="11430" class="timeLineItemValue">14시 30분 ~ 15시</div>
+                    <div id="11500" class="timeLineItemValue">15시 ~ 15시 30분</div>
+                    <div id="11530" class="timeLineItemValue">15시 30분 ~ 16시</div>
+                    <div id="11600" class="timeLineItemValue">16시 ~ 16시 30분</div>
+                    <div id="11630" class="timeLineItemValue">16시 30분 ~ 17시</div>
+                    <div id="11700" class="timeLineItemValue">17시 ~ 17시 30분</div>
+                    <div id="11730" class="timeLineItemValue">17시 30분 ~ 18시</div>
+                </div>
+                <div>
+                    <div id="20900" class="timeLineItemValueFirst">9시 ~ 9시 30분</div>
+                    <div id="20930" class="timeLineItemValue">9시 30분 ~ 10시</div>
+                    <div id="21000" class="timeLineItemValue">10시 ~ 10시 30분</div>
+                    <div id="21030" class="timeLineItemValue">10시 30분 ~ 11시</div>
+                    <div id="21100" class="timeLineItemValue">11시 ~ 11시 30분</div>
+                    <div id="21130" class="timeLineItemValue">11시 30분 ~ 12시</div>
+                    <div id="21200" class="timeLineItemValue">12시 ~ 12시 30분</div>
+                    <div id="21230" class="timeLineItemValue">12시 30분 ~ 13시</div>
+                    <div id="21300" class="timeLineItemValue">13시 ~ 13시 30분</div>
+                    <div id="21330" class="timeLineItemValue">13시 30분 ~ 14시</div>
+                    <div id="21400" class="timeLineItemValue">14시 ~ 14시 30분</div>
+                    <div id="21430" class="timeLineItemValue">14시 30분 ~ 15시</div>
+                    <div id="21500" class="timeLineItemValue">15시 ~ 15시 30분</div>
+                    <div id="21530" class="timeLineItemValue">15시 30분 ~ 16시</div>
+                    <div id="21600" class="timeLineItemValue">16시 ~ 16시 30분</div>
+                    <div id="21630" class="timeLineItemValue">16시 30분 ~ 17시</div>
+                    <div id="21700" class="timeLineItemValue">17시 ~ 17시 30분</div>
+                    <div id="21730" class="timeLineItemValue">17시 30분 ~ 18시</div>
+                </div>
+                <div>
+                    <div id="30900" class="timeLineItemValueFirst">9시 ~ 9시 30분</div>
+                    <div id="30930" class="timeLineItemValue">9시 30분 ~ 10시</div>
+                    <div id="31000" class="timeLineItemValue">10시 ~ 10시 30분</div>
+                    <div id="31030" class="timeLineItemValue">10시 30분 ~ 11시</div>
+                    <div id="31100" class="timeLineItemValue">11시 ~ 11시 30분</div>
+                    <div id="31130" class="timeLineItemValue">11시 30분 ~ 12시</div>
+                    <div id="31200" class="timeLineItemValue">12시 ~ 12시 30분</div>
+                    <div id="31230" class="timeLineItemValue">12시 30분 ~ 13시</div>
+                    <div id="31300" class="timeLineItemValue">13시 ~ 13시 30분</div>
+                    <div id="31330" class="timeLineItemValue">13시 30분 ~ 14시</div>
+                    <div id="31400" class="timeLineItemValue">14시 ~ 14시 30분</div>
+                    <div id="31430" class="timeLineItemValue">14시 30분 ~ 15시</div>
+                    <div id="31500" class="timeLineItemValue">15시 ~ 15시 30분</div>
+                    <div id="31530" class="timeLineItemValue">15시 30분 ~ 16시</div>
+                    <div id="31600" class="timeLineItemValue">16시 ~ 16시 30분</div>
+                    <div id="31630" class="timeLineItemValue">16시 30분 ~ 17시</div>
+                    <div id="31700" class="timeLineItemValue">17시 ~ 17시 30분</div>
+                    <div id="31730" class="timeLineItemValue">17시 30분 ~ 18시</div>
+                </div>
+                <div>
+                    <div id="40900" class="timeLineItemValueFirst">9시 ~ 9시 30분</div>
+                    <div id="40930" class="timeLineItemValue">9시 30분 ~ 10시</div>
+                    <div id="41000" class="timeLineItemValue">10시 ~ 10시 30분</div>
+                    <div id="41030" class="timeLineItemValue">10시 30분 ~ 11시</div>
+                    <div id="41100" class="timeLineItemValue">11시 ~ 11시 30분</div>
+                    <div id="41130" class="timeLineItemValue">11시 30분 ~ 12시</div>
+                    <div id="41200" class="timeLineItemValue">12시 ~ 12시 30분</div>
+                    <div id="41230" class="timeLineItemValue">12시 30분 ~ 13시</div>
+                    <div id="41300" class="timeLineItemValue">13시 ~ 13시 30분</div>
+                    <div id="41330" class="timeLineItemValue">13시 30분 ~ 14시</div>
+                    <div id="41400" class="timeLineItemValue">14시 ~ 14시 30분</div>
+                    <div id="41430" class="timeLineItemValue">14시 30분 ~ 15시</div>
+                    <div id="41500" class="timeLineItemValue">15시 ~ 15시 30분</div>
+                    <div id="41530" class="timeLineItemValue">15시 30분 ~ 16시</div>
+                    <div id="41600" class="timeLineItemValue">16시 ~ 16시 30분</div>
+                    <div id="41630" class="timeLineItemValue">16시 30분 ~ 17시</div>
+                    <div id="41700" class="timeLineItemValue">17시 ~ 17시 30분</div>
+                    <div id="41730" class="timeLineItemValue">17시 30분 ~ 18시</div>
+                </div>
+                <div>
+                    <div id="50900" class="timeLineItemValueFirst">9시 ~ 9시 30분</div>
+                    <div id="50930" class="timeLineItemValue">9시 30분 ~ 10시</div>
+                    <div id="51000" class="timeLineItemValue">10시 ~ 10시 30분</div>
+                    <div id="51030" class="timeLineItemValue">10시 30분 ~ 11시</div>
+                    <div id="51100" class="timeLineItemValue">11시 ~ 11시 30분</div>
+                    <div id="51130" class="timeLineItemValue">11시 30분 ~ 12시</div>
+                    <div id="51200" class="timeLineItemValue">12시 ~ 12시 30분</div>
+                    <div id="51230" class="timeLineItemValue">12시 30분 ~ 13시</div>
+                    <div id="51300" class="timeLineItemValue">13시 ~ 13시 30분</div>
+                    <div id="51330" class="timeLineItemValue">13시 30분 ~ 14시</div>
+                    <div id="51400" class="timeLineItemValue">14시 ~ 14시 30분</div>
+                    <div id="51430" class="timeLineItemValue">14시 30분 ~ 15시</div>
+                    <div id="51500" class="timeLineItemValue">15시 ~ 15시 30분</div>
+                    <div id="51530" class="timeLineItemValue">15시 30분 ~ 16시</div>
+                    <div id="51600" class="timeLineItemValue">16시 ~ 16시 30분</div>
+                    <div id="51630" class="timeLineItemValue">16시 30분 ~ 17시</div>
+                    <div id="51700" class="timeLineItemValue">17시 ~ 17시 30분</div>
+                    <div id="51730" class="timeLineItemValue">17시 30분 ~ 18시</div>
+                </div>
+                <div>
+                    <div id="60900" class="timeLineItemValueFirst">9시 ~ 9시 30분</div>
+                    <div id="60930" class="timeLineItemValue">9시 30분 ~ 10시</div>
+                    <div id="61000" class="timeLineItemValue">10시 ~ 10시 30분</div>
+                    <div id="61030" class="timeLineItemValue">10시 30분 ~ 11시</div>
+                    <div id="61100" class="timeLineItemValue">11시 ~ 11시 30분</div>
+                    <div id="61130" class="timeLineItemValue">11시 30분 ~ 12시</div>
+                    <div id="61200" class="timeLineItemValue">12시 ~ 12시 30분</div>
+                    <div id="61230" class="timeLineItemValue">12시 30분 ~ 13시</div>
+                    <div id="61300" class="timeLineItemValue">13시 ~ 13시 30분</div>
+                    <div id="61330" class="timeLineItemValue">13시 30분 ~ 14시</div>
+                    <div id="61400" class="timeLineItemValue">14시 ~ 14시 30분</div>
+                    <div id="61430" class="timeLineItemValue">14시 30분 ~ 15시</div>
+                    <div id="61500" class="timeLineItemValue">15시 ~ 15시 30분</div>
+                    <div id="61530" class="timeLineItemValue">15시 30분 ~ 16시</div>
+                    <div id="61600" class="timeLineItemValue">16시 ~ 16시 30분</div>
+                    <div id="61630" class="timeLineItemValue">16시 30분 ~ 17시</div>
+                    <div id="61700" class="timeLineItemValue">17시 ~ 17시 30분</div>
+                    <div id="61730" class="timeLineItemValue">17시 30분 ~ 18시</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

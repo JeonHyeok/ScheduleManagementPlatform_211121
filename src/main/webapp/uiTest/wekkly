@@ -1,0 +1,35 @@
+<%-- <div class="weeklyCalendar">
+			<div class="timeLineContainer">
+				<div class="timeLineTitle">TIME</div>
+				<!-- 9시~18시 -->
+				<c:forEach var="i" begin="9" end="18">
+					<div class="timeLineItem">${i} : 00 ~ ${i} : 30</div>
+					<div class="timeLineItem">${i} : 30 ~ ${i+1} : 00</div>
+				</c:forEach>
+			</div>
+			<div class="weekContainer">
+				<div id="calendar">
+					<div class="dayHeaderContainer">
+							<c:forEach var="item" items="${days}" varStatus="idx">
+								<div class="dayHeader">
+									<span>${item}&nbsp&nbsp</span>
+									<span class="dayoftheweek${idx.index}">NoneData</span>
+								</div>
+							</c:forEach>
+						</div>
+
+					<div id="calendar_value">
+						<c:forEach var="i" begin="0" end="6">
+							<div>
+								<div id="${i}0900" class="timeLineItemValueFirst">9시 ~ 9시 30분</div>
+								<div id="${i}0930" class="timeLineItemValue">9시 30분 ~ 10시</div>
+								<c:forEach var="j" begin="10" end="19">
+									<div id="${i}${j}00" class="timeLineItemValue">${j}시 ~ ${j}시 30분</div>
+									<div id="${i}${j}30" class="timeLineItemValue">${j}시 30분 ~ ${j+1}시</div>
+								</c:forEach>
+							</div>
+						</c:forEach>
+					</div>
+				</div>
+			</div>
+		</div>	 --%>
