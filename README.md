@@ -13,3 +13,4 @@
 - /api/users
 - /api/contents
 - /api/schedule
+- /api/faq
